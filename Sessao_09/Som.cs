@@ -21,7 +21,7 @@ public class Som : MonoBehaviour
     {
         _audioSource = GetComponent<AudioSource>();
         if (_audioSource == null)
-            _audioSource = transform.AddComponent<AudioSource>();
+            _audioSource = gameObject.AddComponent<AudioSource>();
         _audioSource.loop = false;
         _audioSource.spatialBlend = 1;
         SelecionaProximoSomPassos();
