@@ -21,7 +21,7 @@ public class Atirar : MonoBehaviour
         _animator=GetComponent<Animator>();
         _audioSource = GetComponent<AudioSource>();
         if (_audioSource == null)
-            _audioSource = transform.AddComponent<AudioSource>();
+            _audioSource = gameObject.AddComponent<AudioSource>();
         _audioSource.spatialBlend = 1;
 
     }
